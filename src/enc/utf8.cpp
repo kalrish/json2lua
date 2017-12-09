@@ -15,7 +15,7 @@ namespace {
 	constexpr auto UTF8_ACCEPT = 0;
 	constexpr auto UTF8_REJECT [[maybe_unused]] = 12;
 	
-	const uint8_t utf8d[] = {
+	const std::uint8_t utf8d[] = {
 		// The first part of the table maps bytes to character classes that
 		// to reduce the size of the transition table and create bitmasks.
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
