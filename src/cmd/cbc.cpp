@@ -90,11 +90,10 @@ read_another_character:
 				}
 			}
 			
-			json2lua::pointer_pair<char32_t> rv;
-			rv.beg = code_points;
-			rv.end = decode_utf8(buffer, read, code_points);
-			
-			return rv;
+			return {
+				code_points,
+				decode_utf8(buffer, read, code_points)
+			};
 		}
 		else
 		{
@@ -153,10 +152,8 @@ cbc::encode_string_code_point
  const char32_t code_point
 )
 {
-	json2lua::pointer_pair<unsigned char> rv;
-	
-	rv.beg = this->string_code_units;
-	rv.end = rv.beg + encode_utf8(code_point, this->string_code_units);
-	
-	return rv;
+	return {
+		this->string_code_units,
+		this->string_code_units + encode_utf8(code_point, this->string_code_units)
+	};
 }
