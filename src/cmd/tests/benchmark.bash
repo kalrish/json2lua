@@ -30,6 +30,6 @@ print_json() {
 	echo '}'
 }
 
-stdout="$(print_json | time ../json2lua.exe)"
+print_json | time ../json2lua.exe >/dev/null
 
 exit $?
