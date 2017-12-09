@@ -1,5 +1,6 @@
 include_rules
 
 : foreach cbc.cpp libinst.cpp json2lua.cpp | ../lib/<headers> config/buffer_size.hpp |> !cxx |> {objs}
-: foreach log.cpp main.cpp utf8.cpp | ../lib/<headers> |> !cxx |> {objs}
+: log.cpp | ../lib/<headers> config/debug_logs.hpp |> !cxx |> {objs}
+: foreach main.cpp utf8.cpp | ../lib/<headers> |> !cxx |> {objs}
 : {objs} |> !ld |> json2lua$(PROGRAM_SUFFIX) | <cmd>

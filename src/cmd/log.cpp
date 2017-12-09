@@ -2,28 +2,23 @@
 
 #include "log.hpp"
 
+#include "config/debug_logs.hpp"
 #include <cstdio>
 
 
-#ifdef DEBUG
 void log_debug
 (
  const char * const s
 )
 noexcept
 {
-	std::fputs("debug: ", stderr);
-	std::fputs(s, stderr);
-	std::fputc('\n', stderr);
+	if constexpr ( include_debug_logs )
+	{
+		std::fputs("debug: ", stderr);
+		std::fputs(s, stderr);
+		std::fputc('\n', stderr);
+	}
 }
-#else
-void log_debug
-(
- const char * const
-)
-noexcept
-{ }
-#endif
 
 void warn
 (
