@@ -4,10 +4,8 @@ This program converts JSON to Lua efficiently. Instead of parsing and loading th
 
 Currently, the project comprises two components:
 
- -  `libjson2lua`, a C++ library implementing a flexible, pull-style JSON-to-Lua parser and converter.
+ -  `libjson2lua`, a C++ library implementing a flexible, pull-style JSON-to-Lua parser and converter. It is kept in tree because it is developed for the program.
  -  `json2lua`, the C++ program which exposes the required functionality to the command line.
-
-The library is kept in the project because it is developed for the program, although it might also be useful elsewhere.
 
 In the future, the program might be expanded to support more encodings and, perhaps, to write bytecode directly.
 
