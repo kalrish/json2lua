@@ -3,7 +3,7 @@
 #include "cbc.hpp"
 
 #include "log.hpp"
-#include "utf8.hpp"
+#include "../enc/utf8.hpp"
 
 
 json2lua::pointer_pair<char32_t>
