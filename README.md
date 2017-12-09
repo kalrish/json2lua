@@ -4,6 +4,7 @@ This program converts JSON to Lua efficiently. Instead of parsing and loading th
 
 Currently, the project comprises two components:
 
+ -  `libenc`, a small C++ library implementing encoding and decoding of text.
  -  `libjson2lua`, a C++ library implementing a flexible, pull-style JSON-to-Lua parser and converter. It is kept in tree because it is developed for the program.
  -  `json2lua`, the C++ program which exposes the required functionality to the command line.
 
