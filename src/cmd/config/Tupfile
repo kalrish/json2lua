@@ -1,3 +1,4 @@
 include_rules
 
 : buffer_size.hpp.in |> tup varsed %f %o |> %B
+: debug_logs.hpp.in |> tup varsed %f %o |> %B
