@@ -1,0 +1,1 @@
+constexpr decltype(sizeof(int)) buffer_size = @BUFFER_SIZE@;

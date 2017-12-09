@@ -1,0 +1,23 @@
+#include "error.hpp"
+#include "pointer_pair.hpp"
+#include "traits.hpp"
+
+
+namespace json2lua
+{
+	struct invalid_escape_sequence final : error
+	{
+		char32_t escape;
+	};
+	
+	template<
+		typename CallbacksClass
+	>
+	pointer_pair<char32_t> process_string
+	(
+	 pointer_pair<char32_t>,
+	 CallbacksClass &
+	)
+	noexcept( traits<CallbacksClass>::noexcept_read && traits<CallbacksClass>::noexcept_write )
+	;
+}

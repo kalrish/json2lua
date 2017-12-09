@@ -1,0 +1,11 @@
+{
+	"positive":1,
+	"negative": -7,
+	"real": 0.4,
+	"exponent": 57e7,
+	"EXPONENT": 65E5,
+	"exponent+": -4e+6,
+	"exponent-": -3e-5,
+	"EXPONENT+": -4E+6,
+	"EXPONENT-": -3E-5
+}

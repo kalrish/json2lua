@@ -1,0 +1,14 @@
+namespace json2lua
+{
+	template<
+	 typename T
+	>
+	constexpr bool
+	check
+	()
+	noexcept
+	;
+}
+
+
+#include "check.tpp"

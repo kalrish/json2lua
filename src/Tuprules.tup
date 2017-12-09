@@ -1,0 +1,11 @@
+include toolchains.tup/@(TOOLCHAIN).tup
+
+ifdef TARGET
+	TARGET=@(TARGET)
+else
+	TARGET=@(TUP_PLATFORM)
+endif
+
+ifeq ($(TARGET),win32)
+	PROGRAM_SUFFIX=.exe
+endif

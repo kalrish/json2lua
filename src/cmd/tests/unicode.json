@@ -1,0 +1,17 @@
+{
+	"especies botánicas": [
+		"ñame",
+		"tulipán"
+	],
+	"Straßen": [
+		"Vögelstraße"
+	],
+	"problematic strings ahead!": {
+		"en dash": "–",
+		"em dash": "—"
+	},
+	"real text": [
+		"The second is that in which that which is wanted, the object of the will, cannot be attained directly –usually because it is not an act in itself, but a particular state of things–."
+	],
+	"escape sequences": "La letra \u00F1 es española; la \u00DF, alemana. Una secuencia de escape aleatoria: \uFFFF."
+}

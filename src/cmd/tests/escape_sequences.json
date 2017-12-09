@@ -1,0 +1,13 @@
+[
+	"a string containing \u006Dany escape sequences",
+	{
+		"quotation mark": "the character \" is often used to cite",
+		"reverse solidus": "\\",
+		"solidus": "\/",
+		"backspace": "\b",
+		"formfeed": "\f",
+		"newline": "\n",
+		"carriage return": "\r",
+		"horizontal tab": "\t"
+	}
+]

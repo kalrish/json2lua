@@ -1,0 +1,4 @@
+#!cc = |> @(CC) -c @(CFLAGS) -o %o %f |> %B.o
+#!ld = |> @(CC) @(LDFLAGS) -o %o %f |>
+!cxx = |> @(CXX) -c @(CXXFLAGS) @(CXXFLAGS_%B) -o %o %f |> %B.o
+!ld = |> @(CXX) @(LDFLAGS) -o %o %f |>

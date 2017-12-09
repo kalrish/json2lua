@@ -1,0 +1,11 @@
+namespace json2lua
+{
+	template<
+	 typename T
+	>
+	struct pointer_pair final
+	{
+		const T * beg;
+		const T * end;
+	};
+}

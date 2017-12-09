@@ -1,0 +1,5 @@
+namespace json2lua
+{
+	struct error
+	{ };
+}

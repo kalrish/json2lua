@@ -1,0 +1,10 @@
+#include "error.hpp"
+
+
+namespace json2lua
+{
+	struct unexpected_token final : error
+	{
+		char32_t token;
+	};
+}

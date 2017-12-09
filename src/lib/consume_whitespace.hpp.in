@@ -1,0 +1,17 @@
+#include "pointer_pair.hpp"
+#include "traits.hpp"
+
+
+namespace json2lua
+{
+	template<
+	 typename CallbacksClass
+	>
+	pointer_pair<char32_t> consume_whitespace
+	(
+	 pointer_pair<char32_t>,
+	 CallbacksClass &
+	)
+	noexcept( traits<CallbacksClass>::noexcept_read )
+	;
+}
