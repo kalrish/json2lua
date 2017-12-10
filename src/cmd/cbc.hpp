@@ -8,7 +8,7 @@ class cbc final
 {
 	private:
 		char32_t buffer[buffer_size];
-		unsigned char string_code_units[4];
+		char string_code_units[4];
 		
 	public:
 		std::FILE * input;
@@ -21,17 +21,17 @@ class cbc final
 		void
 			write
 			(
-			 const unsigned char
+			 const char
 			);
 		
 		void
 			write
 			(
-			 const unsigned char * const,
+			 const char * const,
 			 const std::size_t
 			);
 		
-		json2lua::pointer_pair<unsigned char>
+		json2lua::pointer_pair<char>
 			encode_string_code_point
 			(
 			 const char32_t

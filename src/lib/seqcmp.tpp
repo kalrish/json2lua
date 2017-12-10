@@ -13,7 +13,7 @@ namespace json2lua {
 	seqcmp
 	(
 	 pointer_pair<char32_t> ends,
-	 const unsigned char (& str)[N],
+	 const char (& str)[N],
 	 CallbacksClass & cbo
 	)
 	//noexcept( noexcept(ensure_input(ends, cbo)) )

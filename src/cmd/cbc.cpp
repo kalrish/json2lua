@@ -120,7 +120,7 @@ read_another_character:
 void
 cbc::write
 (
- const unsigned char c
+ const char c
 )
 {
 	if ( std::fputc(c, this->output) == EOF )
@@ -134,7 +134,7 @@ cbc::write
 void
 cbc::write
 (
- const unsigned char * const buffer,
+ const char * const buffer,
  std::size_t size
 )
 {
@@ -146,7 +146,7 @@ cbc::write
 	}
 }
 
-json2lua::pointer_pair<unsigned char>
+json2lua::pointer_pair<char>
 cbc::encode_string_code_point
 (
  const char32_t code_point

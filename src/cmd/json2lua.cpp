@@ -22,7 +22,7 @@ noexcept
 	cbo.output = output;
 	
 	try {
-		const unsigned char return_str[] = { u8'r', u8'e', u8't', u8'u', u8'r', u8'n', u8' ' };
+		const char return_str[] = { u8'r', u8'e', u8't', u8'u', u8'r', u8'n', u8' ' };
 		
 		cbo.write(return_str, sizeof(return_str));
 		
