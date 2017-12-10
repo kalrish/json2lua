@@ -20,9 +20,9 @@ namespace json2lua {
 	{
 		static_assert(check<CallbacksClass>());
 		
-		for ( auto p = str ; p != str+N ; ++p )
+		for ( const auto c : str )
 		{
-			if ( *ends.beg != *p )
+			if ( *ends.beg != c )
 			{
 				unexpected_token e;
 				e.token = *ends.beg;
