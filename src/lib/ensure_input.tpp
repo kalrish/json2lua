@@ -18,25 +18,5 @@ namespace json2lua {
 		static_assert(check<CallbacksClass>());
 		
 		return ends.beg == ends.end ? cbo.read() : ends;
-		
-		/*
-		switch ( static_cast<int>(ends.beg == ends.end) )
-		{
-			case 1:
-				return cbo.read();
-			default:
-				return ends;
-		}
-		*/
-		
-		/*
-		switch ( ends.end - ends.beg )
-		{
-			case 0:
-				return cbo.read();
-			default:
-				return ends;
-		}
-		*/
 	}
 }
