@@ -39,32 +39,4 @@ namespace json2lua {
 		}
 		*/
 	}
-	
-	/*
-	template<
-	 typename CallbacksClass
-	>
-	pointer_pair<char32_t>
-	ensure_input
-	(
-	 pointer_pair<char32_t> ends,
-	 std::size_t n,
-	 CallbacksClass & cbo
-	)
-	noexcept( traits<CallbacksClass>::noexcept_read )
-	{
-		static_assert(check<CallbacksClass>());
-		
-		ends = ensure_input(ends, cbo);
-		
-		do {
-			++ends.beg;
-			ends = ensure_input(ends, cbo);
-			
-			--n;
-		} while ( n > 0 );
-		
-		return ends;
-	}
-	*/
 }

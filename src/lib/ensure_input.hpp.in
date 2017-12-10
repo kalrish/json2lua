@@ -17,19 +17,4 @@ namespace json2lua
 	)
 	noexcept( traits<CallbacksClass>::noexcept_read )
 	;
-	
-	/*
-	template<
-	 typename CallbacksClass
-	>
-	pointer_pair<char32_t>
-	ensure_input
-	(
-	 pointer_pair<char32_t>,
-	 std::size_t,
-	 CallbacksClass &
-	)
-	noexcept( traits<CallbacksClass>::noexcept_read )
-	;
-	*/
 }
